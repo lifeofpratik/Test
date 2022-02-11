@@ -3,11 +3,11 @@
 # $conda activate djangoenv
 # $conda install pip
 # platform: win-64
+numpy
+pandas
 certifi==2018.1.18
 libtiff==0.4.2
 daal
-numpy
-pandas
 daal4py
 django==2.2.24
 intel-openmp
