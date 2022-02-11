@@ -3,7 +3,7 @@
 #$conda activate djangoenv
 # platform: win-64
 certifi==2018.1.18
-libtiff
+libtiff==0.4.2
 daal
 numpy
 pandas
