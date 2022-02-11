@@ -10,6 +10,8 @@ daal4py
 django==2.2.24
 intel-openmp
 libopencv
+mkl
+mkl_fft==1.2.0
 libpng-bins
 opencv-python
 openssl-python
