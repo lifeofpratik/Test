@@ -1,7 +1,7 @@
 # This file may be used to create an environment using:
-# $ conda create -n djangoenv python=3.7 anaconda
-# $conda activate djangoenv
-# $conda install pip
+$ conda create -n djangoenv python=3.7 anaconda
+$conda activate djangoenv
+$conda install pip
 # platform: win-64
 numpy
 pandas
