@@ -3,6 +3,8 @@
 # platform: win-64
 certifi==2018.1.18
 daal
+numpy
+pandas
 daal4py
 django==2.2.24
 intel-openmp
@@ -12,7 +14,6 @@ libtiff
 mkl
 mkl_fft==1.0.6
 mkl-random
-pandas
 opencv-python
 openssl-python
 pillow==8.3.2
