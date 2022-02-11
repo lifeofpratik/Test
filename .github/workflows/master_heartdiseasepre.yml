@@ -33,10 +33,7 @@ jobs:
       - name: SetupMarget
         run: python manage.py migrate
       
-      - name: Run Server
-        run: python manage.py runserver
         
-      
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
       - name: Upload artifact for deployment jobs
