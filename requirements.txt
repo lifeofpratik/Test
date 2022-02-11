@@ -11,8 +11,6 @@ django==2.2.24
 intel-openmp
 libopencv
 libpng-bins
-mkl
-mkl_fft==1.0.6
 opencv-python
 openssl-python
 pillow==8.3.2
