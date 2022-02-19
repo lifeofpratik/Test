@@ -22,20 +22,20 @@ jobs:
         with:
           python-version: '3.7'
 
-      - name: Create and start virtual environment
-        run: |
-          python -m venv venv
-          source venv/bin/activate
       
       - name: Install dependencies
         run : |
           conda create -n djangoenv python=3.7 anaconda
+          conda init
           conda activate djangoenv
           conda install -c anaconda django 
         
       
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+           pip install -r requirements.txt
+           python manage.py migrate
+        
         
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
