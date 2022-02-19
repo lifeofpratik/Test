@@ -13,7 +13,7 @@ intel-openmp
 #libtiff==0.4.2
 libopencv
 mkl
-mkl_fft==1.2.0
+#mkl_fft==1.2.0
 libpng-bins
 opencv-python
 openssl-python
