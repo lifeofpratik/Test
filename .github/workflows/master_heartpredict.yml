@@ -17,8 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Python version
-        uses: actions/setup-python@v1
+      - name: Set up Conda version
+        uses: s-weigand/setup-conda@v1
         with:
           python-version: '3.7'
 
@@ -28,15 +28,12 @@ jobs:
           conda create -n djangoenv python=3.7 anaconda
           conda init
           conda activate djangoenv
-          conda install -c anaconda django 
-        
+          conda install pip
+          pip install -r requirements.txt
+          pip install django==2.2.24
+          pip install --upgrade scikit-learn==0.20.3
+          python manage.py migrate
       
-      - name: Install dependencies
-        run: |
-           pip install -r requirements.txt
-           python manage.py migrate
-        
-        
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
