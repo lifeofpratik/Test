@@ -26,8 +26,7 @@ jobs:
       - name: Install dependencies
         run : |
           conda create -n djangoenv python=3.7 anaconda
-          conda init
-          conda activate djangoenv
+          $CONDA/bin/activate djangoenv
           conda install pip
           pip install -r requirements.txt
           pip install django==2.2.24
