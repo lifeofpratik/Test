@@ -10,7 +10,7 @@ daal
 daal4py
 django==2.2.24
 intel-openmp
-libtiff==0.4.2
+libtiff
 libopencv
 mkl
 #mkl_fft==1.2.0
